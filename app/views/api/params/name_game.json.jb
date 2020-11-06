@@ -1,0 +1,6 @@
+{
+  name: @params,
+  message: @a_name,
+  number: @number,
+  guess: @guess
+}
