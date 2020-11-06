@@ -1,6 +1,5 @@
 {
-  name: @params,
-  message: @a_name,
-  number: @number,
-  guess: @guess
+  name: @name,
+  message: @message,
+ 
 }
