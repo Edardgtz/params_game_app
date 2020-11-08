@@ -29,8 +29,23 @@ class Api::ParamsController < ApplicationController
     elsif @guess == correct_answer
       @message = "You got it!!"
     end
-    render "name_game.json.jb"
+    # render "name_game.json.jb"
+    render "segment.json.jb"
     
-
   end
+
+  def body
+    @username = params[:username]
+    @password = params[:password]
+    
+    if @username == "hugh" && @password == "swordfish"
+      @message = "Valid credentials"
+    else
+      @message = "Invalid credentials"
+    end
+    render 'body.json.jb'
+  end
+
+
+
 end
